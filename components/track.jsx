@@ -166,7 +166,7 @@ export default function SmartTradeManagerPage() {
   const winRate = totalTrades > 0 ? ((wins / totalTrades) * 100).toFixed(1) : 0
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6 flex items-start justify-center">
+    <div className=" bg-gray-900 text-white p-6 flex items-start justify-center">
       <div className="max-w-5xl w-full bg-gray-800 rounded-2xl shadow-lg p-6">
         <h1 className="text-2xl font-semibold mb-2">Smart Trade Manager</h1>
         <p className="text-sm text-gray-300 mb-4">Manage trades manually. Press Loss or Win after each trade.</p>

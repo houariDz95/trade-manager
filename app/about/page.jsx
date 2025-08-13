@@ -1,8 +1,25 @@
+import Banner_750 from "../banners/banner_720";
+
 // app/about/page.tsx
+export const metadata = {
+  title: "About Smart Trade Manager",
+  description: "Learn about Smart Trade Manager, a simple yet powerful browser-based trade tracking tool designed to help you stay disciplined and reach your profit goals.",
+};
+
 export default function AboutPage() {
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col">
       {/* About Section */}
+      <section className="bg-gray-800 py-6">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Replace with AdSense code */}
+          <div className="bg-gray-700 text-gray-400 p-6 rounded-lg">
+            <script async="async" data-cfasync="false" src="//pl27414194.profitableratecpm.com/f2606ec16f0802c60171ef271990790a/invoke.js"></script>
+            <div id="container-f2606ec16f0802c60171ef271990790a"></div>
+          </div>
+        </div>
+      </section>
+
       <section className="flex flex-col items-center justify-center text-center px-6 py-20 flex-1">
         <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
           About TradeTrack
@@ -25,15 +42,10 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Replace with AdSense code */}
           <div className="bg-gray-700 text-gray-400 p-6 rounded-lg">
-            Your Ad Here (728x90)
+            <Banner_750 />
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-950 text-gray-400 py-6 text-center text-sm">
-        © {new Date().getFullYear()} TradeTrack. All rights reserved.
-      </footer>
     </div>
   );
 }

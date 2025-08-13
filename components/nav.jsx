@@ -1,14 +1,9 @@
 // components/Navbar.tsx
 "use client";
-import { useState, useEffect } from "react";
 import Link from "next/link";
  
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-  }, [darkMode]);
 
   return (
     <nav className="bg-gray-950 text-white shadow-md">
@@ -33,12 +28,12 @@ export default function Navbar() {
           </div>
 
           {/* Dark mode toggle */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded transition"
+          <Link
+            href="/trade-manager"
+            className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
           >
-            {darkMode ? "☀️" : "🌙"}
-          </button> 
+            Start Trading
+          </Link>
         </div>
       </div>
     </nav>

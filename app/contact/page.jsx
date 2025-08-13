@@ -1,4 +1,10 @@
+import Banner_750 from "../banners/banner_720";
+
 // app/contact/page.tsx
+export const metadata = {
+  title: "Contact Smart Trade Manager",
+  description: "Need help or have questions? Contact Smart Trade Manager via email at houarieddref5@gmail.com.",
+};
 
 export default function ContactPage() {
   return (
@@ -21,15 +27,10 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Replace with AdSense code */}
           <div className="bg-gray-700 text-gray-400 p-6 rounded-lg">
-            Your Ad Here (728x90)
+            <Banner_750 />
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-950 text-gray-400 py-6 text-center text-sm">
-        © {new Date().getFullYear()} TradeTrack. All rights reserved.
-      </footer>
     </div>
   );
 }
